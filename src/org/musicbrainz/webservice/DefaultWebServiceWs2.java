@@ -1,3 +1,20 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Gist
+ @krishnact
+ Unwatch 1
+  Star 0
+  Fork 4 krishnact/musicbrainzws2-java
+forked from schnatterer/musicbrainzws2-java
+ Code  Pull requests 0  Wiki  Pulse  Graphs  Settings
+Tree: db93114b3c Find file Copy pathmusicbrainzws2-java/src/org/musicbrainz/webservice/DefaultWebServiceWs2.java
+f9722de  17 minutes ago
+@krishnact krishnact Added methods to set port and protocol
+3 contributors @schnatterer @marcoc1712 @krishnact
+RawBlameHistory     472 lines (410 sloc)  15.4 KB
 package org.musicbrainz.webservice;
 
 import java.io.UnsupportedEncodingException;
@@ -115,7 +132,6 @@ public abstract class DefaultWebServiceWs2 extends DomainsWs2 implements WebServ
       /*All POST requests require authentication. You should authenticate using HTTP Digest,
      * use the same username and password you use to access the main 
      * http://musicbrainz.org website. The realm is "musicbrainz.org".
-
      POST requests should always include a 'client' parameter in the URL (not the body). 
      * The value of 'client' should be the ID of the client software submitting data. 
      * This has to be the application's name and version number, not that of a client 
@@ -416,6 +432,18 @@ public abstract class DefaultWebServiceWs2 extends DomainsWs2 implements WebServ
     }
 
     /**
+     * @param port the port to set
+     */
+    public void setPort(int port) {
+        this.port = port;
+    }
+    /**
+     * @param port the port to set
+     */
+    public void setProtocol(String protocol) {
+        this.protocol = protocol;
+    }    
+    /**
      * @return the realm
      */
     public String getRealm() {
@@ -457,3 +485,5 @@ public abstract class DefaultWebServiceWs2 extends DomainsWs2 implements WebServ
     }
         
 }
+Contact GitHub API Training Shop Blog About
+© 2016 GitHub, Inc. Terms Privacy Security Status Help
