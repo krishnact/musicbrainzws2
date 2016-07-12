@@ -1,20 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @krishnact
- Unwatch 1
-  Star 0
-  Fork 4 krishnact/musicbrainzws2-java
-forked from schnatterer/musicbrainzws2-java
- Code  Pull requests 0  Wiki  Pulse  Graphs  Settings
-Tree: db93114b3c Find file Copy pathmusicbrainzws2-java/src/org/musicbrainz/webservice/DefaultWebServiceWs2.java
-f9722de  17 minutes ago
-@krishnact krishnact Added methods to set port and protocol
-3 contributors @schnatterer @marcoc1712 @krishnact
-RawBlameHistory     472 lines (410 sloc)  15.4 KB
 package org.musicbrainz.webservice;
 
 import java.io.UnsupportedEncodingException;
@@ -485,5 +468,3 @@ public abstract class DefaultWebServiceWs2 extends DomainsWs2 implements WebServ
     }
         
 }
-Contact GitHub API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Status Help
